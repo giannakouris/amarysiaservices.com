@@ -1,17 +1,17 @@
-/* GLOBAL RESET */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amarysia Ship Services</title>
 
-/* BODY */
+<style>
+
 body{
+margin:0;
 font-family:Segoe UI, Arial, sans-serif;
-background:#000814;
+background:#000511;
 color:white;
-line-height:1.6;
-scroll-behavior:smooth;
 }
 
 /* NAVIGATION */
@@ -21,38 +21,38 @@ width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 8vw;
-background:rgba(0,8,20,0.97);
+padding:25px 170px;
+background:rgba(0,5,17,0.98);
 z-index:1000;
-flex-wrap:wrap;
-backdrop-filter:blur(15px);
+backdrop-filter: blur(20px);
 }
 
-nav h2{
-font-size:24px;
+nav img.logo{
+height:70px;
 }
 
+/* Menu links */
 nav a{
 color:white;
 text-decoration:none;
-margin-left:30px;
+margin-left:40px;
 font-weight:600;
-transition:0.3s;
 }
 
 nav a:hover{
 color:#38bdf8;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero{
 height:100vh;
 position:relative;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
+overflow:hidden;
 }
 
 .hero video{
@@ -61,108 +61,108 @@ width:100%;
 height:100%;
 object-fit:cover;
 opacity:0.45;
+transform:scale(1.1);
+}
+
+.hero img.logo-big{
+height:150px;
+margin-bottom:20px;
 }
 
 .hero h1{
-font-size:clamp(60px,10vw,120px);
-animation:fadeIn 2s ease;
+font-size:130px;
+margin:0;
+letter-spacing:5px;
+animation:fadeIn 2s;
 }
 
 .hero p{
 font-size:28px;
 max-width:1000px;
-margin:auto;
+opacity:0.95;
 }
 
-/* BUTTONS */
+/* BUTTON */
 .btn{
-padding:22px 70px;
-border-radius:60px;
+padding:28px 85px;
+border-radius:70px;
 border:none;
-background:#38bdf8;
+background:linear-gradient(45deg,#0ea5e9,#38bdf8);
 color:white;
-font-size:22px;
+font-size:24px;
 cursor:pointer;
 transition:0.4s;
-margin-top:40px;
+margin-top:50px;
 }
 
 .btn:hover{
-transform:scale(1.12);
-background:#0ea5e9;
+transform:scale(1.2);
 }
 
 /* SECTIONS */
 .section{
-padding:160px 8vw;
+padding:200px 170px;
 text-align:center;
 }
 
-/* GRID SERVICES */
+/* SERVICES */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:60px;
-margin-top:100px;
+grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+gap:90px;
+margin-top:120px;
 }
 
 .card{
-background:rgba(255,255,255,0.04);
-padding:50px;
-border-radius:40px;
+background:rgba(255,255,255,0.05);
+padding:70px;
+border-radius:55px;
 border:1px solid rgba(255,255,255,0.1);
-backdrop-filter:blur(25px);
+backdrop-filter: blur(40px);
 transition:0.6s;
 }
 
 .card:hover{
-transform:translateY(-25px) scale(1.05);
-background:rgba(56,189,248,0.2);
-box-shadow:0 0 50px rgba(56,189,248,0.3);
+transform:translateY(-40px) scale(1.08);
+background:rgba(56,189,248,0.25);
 }
 
-/* GALLERY */
+/* FLEET */
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:40px;
-margin-top:90px;
+grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+gap:55px;
+margin-top:100px;
 }
 
 .gallery img{
 width:100%;
-border-radius:35px;
+border-radius:50px;
 transition:0.5s;
 }
 
 .gallery img:hover{
-transform:scale(1.07);
+transform:scale(1.1);
 }
 
-/* CONTACT FORM */
+/* CONTACT */
 input, textarea{
-width:80%;
-max-width:700px;
-padding:22px;
-margin:15px auto;
-display:block;
-border-radius:30px;
+width:75%;
+padding:28px;
+margin:20px;
+border-radius:40px;
 border:none;
 font-size:18px;
 }
 
-/* SOCIAL LINKS */
-.social{
-margin-top:60px;
-}
-
+/* SOCIAL */
 .social a{
 display:inline-block;
-margin:15px;
-padding:18px 40px;
+margin:20px;
+padding:22px 50px;
 background:#020617;
 color:white;
-border-radius:35px;
+border-radius:45px;
 text-decoration:none;
 transition:0.4s;
 }
@@ -174,57 +174,170 @@ background:#38bdf8;
 /* FOOTER */
 footer{
 background:#000;
-padding:100px 8vw;
+padding:130px;
 text-align:center;
 }
 
 /* WHATSAPP FLOAT */
 .whatsapp{
 position:fixed;
-bottom:35px;
-right:35px;
+bottom:40px;
+right:40px;
 background:#25D366;
-padding:22px;
+padding:28px;
 border-radius:50%;
-font-size:30px;
+font-size:34px;
 text-decoration:none;
-z-index:999;
 }
 
 /* ANIMATION */
 @keyframes fadeIn{
-from{
-opacity:0;
-transform:translateY(120px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
+from{opacity:0; transform:translateY(140px);}
+to{opacity:1; transform:translateY(0);}
 }
 
-/* MOBILE RESPONSIVE */
-@media(max-width:768px){
+</style>
+</head>
 
-nav{
-padding:18px 5vw;
-}
+<body>
 
-nav a{
-display:block;
-margin:10px 0;
-}
+<nav>
 
-.hero p{
-font-size:20px;
-}
+<!-- LOGO in menu -->
+<img class="logo" src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/23972879/918518_840136.png" alt="Amarysia Logo">
 
-.section{
-padding:120px 6vw;
-}
+<div>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#fleet">Fleet</a>
+<a href="#vision">Vision</a>
+<a href="#contact">Contact</a>
+</div>
 
-input, textarea{
-width:95%;
-}
+</nav>
 
-}
+<section class="hero" id="home">
+
+<video autoplay muted loop>
+<source src="https://cdn.coverr.co/videos/coverr-ocean-waves-7423/1080p.mp4">
+</video>
+
+<!-- LOGO BIG in hero -->
+<img class="logo-big" src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/23972879/918518_840136.png" alt="Amarysia Logo">
+
+<h1>AMARYSIA</h1>
+
+<p>
+International maritime fumigation and sanitation corporation.<br>
+Port of Esmeraldas — Ecuador.<br>
+24/7 emergency global maritime support.
+</p>
+
+<button class="btn" onclick="window.open('https://amarysiashipservice.wordpress.com/', '_blank')">
+Explore Elite Services
+</button>
+
+</section>
+
+<section class="section" id="services">
+
+<h2>Global Maritime Protection Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🚢 Tanker & Chemical Protection</h3>
+<p>Specialized fumigation for hazardous cargo vessels.</p>
+</div>
+
+<div class="card">
+<h3>📦 Container & Cargo Shipping</h3>
+<p>International quarantine compliant pest control.</p>
+</div>
+
+<div class="card">
+<h3>⚓ Bulk Carrier Protection</h3>
+<p>Infestation prevention and cargo integrity protection.</p>
+</div>
+
+<div class="card">
+<h3>🌍 Corporate Maritime Operations</h3>
+<p>Global shipping sanitation coordination.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="fleet">
+
+<h2>Fleet & Maritime Operations</h2>
+
+<div class="gallery">
+
+<img src="https://www.wilhelmsen.com/globalassets/ship-management/images/regular-images/oil-tanker.jpg">
+<img src="https://cdnweb.ictsi.com/users/user56/Contecon%20Guayaquil%20welcomes%20largest%20PIL%20vessel.jpg">
+<img src="https://cdnimg.bnamericas.com/YeKpowpLimhpWcuMjYfXxOgvunIdbQVtFFJecuVjseIoAvmlDYHOdQBQUzZntIKe.jpeg">
+
+</div>
+
+</section>
+
+<section class="section" id="vision">
+
+<h2>Corporate Vision & Excellence</h2>
+
+<p style="max-width:1200px;margin:auto;">
+Amarysia Ship Services is dedicated to providing elite maritime fumigation solutions,
+maintaining global safety standards, supporting international shipping companies,
+and expanding professional port service operations across global maritime trade routes.
+</p>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2>Contact & 24/7 Support</h2>
+
+<p>
+📍 Port of Esmeraldas — Ecuador<br>
+📧 sgto.vasquez@hotmail.com<br>
+📱 +593 969693131<br>
+🕐 24/7 Emergency Maritime Support
+</p>
+
+<form>
+<input type="text" placeholder="Full Name"><br>
+<input type="email" placeholder="Email"><br>
+<textarea placeholder="Business Message"></textarea><br>
+
+<button class="btn">Send Inquiry</button>
+</form>
+
+<div class="social">
+<a href="https://www.facebook.com/profile.php?id=61587574675874">Facebook</a>
+<a href="https://www.instagram.com/amarysia2/">Instagram</a>
+<a href="https://www.linkedin.com/company/111351317/">LinkedIn</a>
+<a href="https://wa.me/593969693131">WhatsApp</a>
+</div>
+
+<div style="margin-top:100px;">
+<iframe
+src="https://www.google.com/maps?q=Esmeraldas,Ecuador&output=embed"
+width="85%"
+height="450"
+style="border-radius:50px;border:none;">
+</iframe>
+</div>
+
+</section>
+
+<footer>
+<h2>Amarysia Ship Services</h2>
+<p>Global Maritime Fumigation Excellence</p>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+<a href="https://wa.me/593969693131" class="whatsapp">💬</a>
+
+</body>
+</html>
