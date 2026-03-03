@@ -3,338 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amarysia Ship Services</title>
 
-<style>
+<title>Amarysia Ship Services | Maritime Fumigation Ecuador</title>
+<meta name="description" content="Professional maritime fumigation and sanitation services in Port of Esmeraldas, Ecuador. 24/7 tanker, container and bulk vessel protection.">
 
-body{
-margin:0;
-font-family:Segoe UI, Arial, sans-serif;
-background:#000511;
-color:white;
-}
+<!-- Premium Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-/* NAVIGATION */
-nav{
-position:fixed;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 140px;
-background:rgba(0,5,17,0.98);
-z-index:1000;
-backdrop-filter: blur(20px);
-}
-
-.logo{
-display:flex;
-align-items:center;
-}
-
-.logo img{
-height:60px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:35px;
-font-weight:600;
-font-size:16px;
-}
-
-nav a:hover{
-color:#38bdf8;
-}
-
-/* HERO */
-.hero{
-height:100vh;
-position:relative;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-overflow:hidden;
-}
-
-.hero video{
-position:absolute;
-width:100%;
-height:100%;
-object-fit:cover;
-opacity:0.45;
-transform:scale(1.1);
-}
-
-.hero h1{
-font-size:120px;
-margin:0;
-letter-spacing:5px;
-animation:fadeIn 2s;
-}
-
-.hero p{
-font-size:26px;
-max-width:950px;
-opacity:0.95;
-}
-
-/* PREMIUM BUTTON */
-.btn{
-padding:25px 70px;
-border-radius:70px;
-border:none;
-background:linear-gradient(45deg,#0ea5e9,#38bdf8);
-color:white;
-font-size:20px;
-cursor:pointer;
-transition:0.4s;
-margin-top:45px;
-}
-
-.btn:hover{
-transform:scale(1.1);
-}
-
-/* SECTIONS */
-.section{
-padding:180px 140px;
-text-align:center;
-}
-
-/* SERVICES */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-gap:70px;
-margin-top:100px;
-}
-
-.card{
-background:rgba(255,255,255,0.05);
-padding:60px;
-border-radius:45px;
-border:1px solid rgba(255,255,255,0.1);
-backdrop-filter: blur(40px);
-transition:0.6s;
-}
-
-.card:hover{
-transform:translateY(-25px) scale(1.05);
-background:rgba(56,189,248,0.25);
-}
-
-/* FLEET */
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
-gap:45px;
-margin-top:90px;
-}
-
-.gallery img{
-width:100%;
-border-radius:40px;
-transition:0.5s;
-}
-
-.gallery img:hover{
-transform:scale(1.05);
-}
-
-/* CONTACT */
-input, textarea{
-width:70%;
-padding:22px;
-margin:15px;
-border-radius:35px;
-border:none;
-font-size:16px;
-}
-
-/* SOCIAL */
-.social a{
-display:inline-block;
-margin:15px;
-padding:18px 40px;
-background:#020617;
-color:white;
-border-radius:35px;
-text-decoration:none;
-transition:0.4s;
-}
-
-.social a:hover{
-background:#38bdf8;
-}
-
-/* FOOTER */
-footer{
-background:#000;
-padding:100px;
-text-align:center;
-}
-
-/* WHATSAPP FLOAT */
-.whatsapp{
-position:fixed;
-bottom:40px;
-right:40px;
-background:#25D366;
-padding:22px;
-border-radius:50%;
-font-size:28px;
-text-decoration:none;
-}
-
-/* ANIMATION */
-@keyframes fadeIn{
-from{opacity:0; transform:translateY(100px);}
-to{opacity:1; transform:translateY(0);}
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
+<nav id="navbar">
+  <div class="logo">
+    <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/23972879/918518_840136.png">
+  </div>
 
-<div class="logo">
-<img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/23972879/918518_840136.png">
-</div>
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#fleet">Fleet</a>
+    <a href="#vision">Vision</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-<div>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#fleet">Fleet</a>
-<a href="#vision">Vision</a>
-<a href="#contact">Contact</a>
-</div>
-
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
 </nav>
 
 <section class="hero" id="home">
+  <video autoplay muted loop>
+    <source src="https://cdn.coverr.co/videos/coverr-ocean-waves-7423/1080p.mp4">
+  </video>
 
-<video autoplay muted loop>
-<source src="https://cdn.coverr.co/videos/coverr-ocean-waves-7423/1080p.mp4">
-</video>
+  <div class="hero-content fade">
+    <h1>AMARYSIA</h1>
+    <p>
+      Elite Maritime Fumigation & Sanitation Services<br>
+      Port of Esmeraldas — Ecuador<br>
+      24/7 Global Vessel Protection
+    </p>
 
-<div>
-<h1>AMARYSIA</h1>
-
-<p>
-Elite maritime fumigation & sanitation corporation.<br>
-Port of Esmeraldas — Ecuador.<br>
-International vessel hygiene protection.<br>
-24/7 emergency maritime support.
-</p>
-
-<button class="btn" onclick="window.open('https://amarysiashipservice.wordpress.com/', '_blank')">
-Explore Elite Services
-</button>
-
-</div>
-
+    <button class="btn"
+      onclick="window.open('https://amarysiashipservice.wordpress.com/', '_blank')">
+      Explore Elite Services
+    </button>
+  </div>
 </section>
 
-<section class="section" id="services">
+<section class="section fade" id="services">
+  <h2>Professional Maritime Services</h2>
 
-<h2>Global Maritime Protection Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🚢 Tanker & Chemical Vessel Fumigation</h3>
+      <p>Specialized contamination prevention and compliance support for hazardous cargo vessels.</p>
+    </div>
 
-<div class="grid">
+    <div class="card">
+      <h3>📦 Container & Cargo Protection</h3>
+      <p>International maritime quarantine standards and certified pest control solutions.</p>
+    </div>
 
-<div class="card">
-<h3>🚢 Tanker & Chemical Protection</h3>
-<p>Specialized fumigation for hazardous cargo vessels ensuring full compliance and contamination prevention.</p>
-</div>
+    <div class="card">
+      <h3>⚓ Bulk Carrier Protection</h3>
+      <p>Comprehensive infestation control preserving cargo integrity and operational standards.</p>
+    </div>
 
-<div class="card">
-<h3>📦 Container & Cargo Shipping</h3>
-<p>Professional pest control aligned with international shipping and quarantine regulations.</p>
-</div>
-
-<div class="card">
-<h3>⚓ Bulk Carrier Protection</h3>
-<p>Advanced infestation prevention preserving cargo integrity and vessel operational standards.</p>
-</div>
-
-<div class="card">
-<h3>🌍 Corporate Maritime Operations</h3>
-<p>Coordinated sanitation solutions supporting global trade routes and port operations.</p>
-</div>
-
-</div>
+    <div class="card">
+      <h3>🌍 Port Sanitation Operations</h3>
+      <p>Strategic fumigation coordination ensuring safe and compliant port operations.</p>
+    </div>
+  </div>
 </section>
 
-<section class="section" id="fleet">
+<section class="section dark fade" id="fleet">
+  <h2>Fleet & Operations</h2>
 
-<h2>Fleet & Maritime Operations</h2>
-
-<div class="gallery">
-
-<img src="https://www.wilhelmsen.com/globalassets/ship-management/images/regular-images/oil-tanker.jpg">
-<img src="https://cdnweb.ictsi.com/users/user56/Contecon%20Guayaquil%20welcomes%20largest%20PIL%20vessel.jpg">
-<img src="https://cdnimg.bnamericas.com/YeKpowpLimhpWcuMjYfXxOgvunIdbQVtFFJecuVjseIoAvmlDYHOdQBQUzZntIKe.jpeg">
-
-</div>
-
+  <div class="gallery">
+    <img src="https://www.wilhelmsen.com/globalassets/ship-management/images/regular-images/oil-tanker.jpg">
+    <img src="https://cdnweb.ictsi.com/users/user56/Contecon%20Guayaquil%20welcomes%20largest%20PIL%20vessel.jpg">
+    <img src="https://cdnimg.bnamericas.com/YeKpowpLimhpWcuMjYfXxOgvunIdbQVtFFJecuVjseIoAvmlDYHOdQBQUzZntIKe.jpeg">
+  </div>
 </section>
 
-<section class="section" id="vision">
-
-<h2>Corporate Vision & Excellence</h2>
-
-<p style="max-width:1100px;margin:auto;">
-Amarysia Ship Services operates with strategic precision in Ecuadorian ports, delivering certified maritime fumigation services, ensuring regulatory compliance, environmental responsibility, and operational excellence for global shipping operators.
-</p>
-
+<section class="section fade" id="vision">
+  <h2>Corporate Vision</h2>
+  <p class="center-text">
+    Amarysia Ship Services operates with precision and compliance,
+    delivering high-standard maritime fumigation services across Ecuadorian ports.
+    Our mission is to protect global trade through certified sanitation excellence,
+    rapid response capability, and 24/7 operational availability.
+  </p>
 </section>
 
-<section class="section" id="contact">
+<section class="section dark fade" id="contact">
+  <h2>Contact & 24/7 Support</h2>
 
-<h2>Contact & 24/7 Support</h2>
+  <p class="center-text">
+    📍 Port of Esmeraldas — Ecuador<br>
+    📧 sgto.vasquez@hotmail.com<br>
+    📱 +593 969693131<br>
+    🕐 24/7 Emergency Availability
+  </p>
 
-<p>
-📍 Port of Esmeraldas — Ecuador<br>
-📧 sgto.vasquez@hotmail.com<br>
-📱 +593 969693131<br>
-🕐 24/7 Emergency Maritime Support
-</p>
+  <div class="social">
+    <a href="https://www.facebook.com/profile.php?id=61587574675874">Facebook</a>
+    <a href="https://www.instagram.com/amarysia2/">Instagram</a>
+    <a href="https://www.linkedin.com/company/111351317/">LinkedIn</a>
+    <a href="https://wa.me/593969693131">WhatsApp</a>
+  </div>
 
-<form>
-<input type="text" placeholder="Full Name"><br>
-<input type="email" placeholder="Email"><br>
-<textarea placeholder="Business Message"></textarea><br>
-
-<button class="btn">Send Inquiry</button>
-</form>
-
-<div class="social">
-<a href="https://www.facebook.com/profile.php?id=61587574675874">Facebook</a>
-<a href="https://www.instagram.com/amarysia2/">Instagram</a>
-<a href="https://www.linkedin.com/company/111351317/">LinkedIn</a>
-<a href="https://wa.me/593969693131">WhatsApp</a>
-</div>
-
-<div style="margin-top:80px;">
-<iframe
-src="https://www.google.com/maps?q=Esmeraldas,Ecuador&output=embed"
-width="85%"
-height="400"
-style="border-radius:40px;border:none;">
-</iframe>
-</div>
-
+  <div class="map">
+    <iframe src="https://www.google.com/maps?q=Esmeraldas,Ecuador&output=embed"></iframe>
+  </div>
 </section>
 
 <footer>
-<p>© 2026 Amarysia Ship Services — Global Maritime Fumigation Excellence</p>
+  <p>© 2026 Amarysia Ship Services — All Rights Reserved</p>
 </footer>
 
 <a href="https://wa.me/593969693131" class="whatsapp">💬</a>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+
+window.addEventListener("scroll", function(){
+  document.querySelectorAll(".fade").forEach(el=>{
+    if(el.getBoundingClientRect().top < window.innerHeight - 100){
+      el.classList.add("show");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
