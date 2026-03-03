@@ -21,22 +21,27 @@ width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:25px 170px;
+padding:20px 140px;
 background:rgba(0,5,17,0.98);
 z-index:1000;
 backdrop-filter: blur(20px);
 }
 
-nav img.logo{
-height:70px;
+.logo{
+display:flex;
+align-items:center;
 }
 
-/* Menu links */
+.logo img{
+height:60px;
+}
+
 nav a{
 color:white;
 text-decoration:none;
-margin-left:40px;
+margin-left:35px;
 font-weight:600;
+font-size:16px;
 }
 
 nav a:hover{
@@ -48,7 +53,6 @@ color:#38bdf8;
 height:100vh;
 position:relative;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
@@ -64,105 +68,100 @@ opacity:0.45;
 transform:scale(1.1);
 }
 
-.hero img.logo-big{
-height:150px;
-margin-bottom:20px;
-}
-
 .hero h1{
-font-size:130px;
+font-size:120px;
 margin:0;
 letter-spacing:5px;
 animation:fadeIn 2s;
 }
 
 .hero p{
-font-size:28px;
-max-width:1000px;
+font-size:26px;
+max-width:950px;
 opacity:0.95;
 }
 
-/* BUTTON */
+/* PREMIUM BUTTON */
 .btn{
-padding:28px 85px;
+padding:25px 70px;
 border-radius:70px;
 border:none;
 background:linear-gradient(45deg,#0ea5e9,#38bdf8);
 color:white;
-font-size:24px;
+font-size:20px;
 cursor:pointer;
 transition:0.4s;
-margin-top:50px;
+margin-top:45px;
 }
 
 .btn:hover{
-transform:scale(1.2);
+transform:scale(1.1);
 }
 
 /* SECTIONS */
 .section{
-padding:200px 170px;
+padding:180px 140px;
 text-align:center;
 }
 
 /* SERVICES */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
-gap:90px;
-margin-top:120px;
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+gap:70px;
+margin-top:100px;
 }
 
 .card{
 background:rgba(255,255,255,0.05);
-padding:70px;
-border-radius:55px;
+padding:60px;
+border-radius:45px;
 border:1px solid rgba(255,255,255,0.1);
 backdrop-filter: blur(40px);
 transition:0.6s;
 }
 
 .card:hover{
-transform:translateY(-40px) scale(1.08);
+transform:translateY(-25px) scale(1.05);
 background:rgba(56,189,248,0.25);
 }
 
 /* FLEET */
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
-gap:55px;
-margin-top:100px;
+grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+gap:45px;
+margin-top:90px;
 }
 
 .gallery img{
 width:100%;
-border-radius:50px;
+border-radius:40px;
 transition:0.5s;
 }
 
 .gallery img:hover{
-transform:scale(1.1);
+transform:scale(1.05);
 }
 
 /* CONTACT */
 input, textarea{
-width:75%;
-padding:28px;
-margin:20px;
-border-radius:40px;
+width:70%;
+padding:22px;
+margin:15px;
+border-radius:35px;
 border:none;
-font-size:18px;
+font-size:16px;
 }
 
 /* SOCIAL */
 .social a{
 display:inline-block;
-margin:20px;
-padding:22px 50px;
+margin:15px;
+padding:18px 40px;
 background:#020617;
 color:white;
-border-radius:45px;
+border-radius:35px;
 text-decoration:none;
 transition:0.4s;
 }
@@ -174,7 +173,7 @@ background:#38bdf8;
 /* FOOTER */
 footer{
 background:#000;
-padding:130px;
+padding:100px;
 text-align:center;
 }
 
@@ -184,15 +183,15 @@ position:fixed;
 bottom:40px;
 right:40px;
 background:#25D366;
-padding:28px;
+padding:22px;
 border-radius:50%;
-font-size:34px;
+font-size:28px;
 text-decoration:none;
 }
 
 /* ANIMATION */
 @keyframes fadeIn{
-from{opacity:0; transform:translateY(140px);}
+from{opacity:0; transform:translateY(100px);}
 to{opacity:1; transform:translateY(0);}
 }
 
@@ -203,8 +202,9 @@ to{opacity:1; transform:translateY(0);}
 
 <nav>
 
-<!-- LOGO in menu -->
-<img class="logo" src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/23972879/918518_840136.png" alt="Amarysia Logo">
+<div class="logo">
+<img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/23972879/918518_840136.png">
+</div>
 
 <div>
 <a href="#home">Home</a>
@@ -222,20 +222,21 @@ to{opacity:1; transform:translateY(0);}
 <source src="https://cdn.coverr.co/videos/coverr-ocean-waves-7423/1080p.mp4">
 </video>
 
-<!-- LOGO BIG in hero -->
-<img class="logo-big" src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/23972879/918518_840136.png" alt="Amarysia Logo">
-
+<div>
 <h1>AMARYSIA</h1>
 
 <p>
-International maritime fumigation and sanitation corporation.<br>
+Elite maritime fumigation & sanitation corporation.<br>
 Port of Esmeraldas — Ecuador.<br>
-24/7 emergency global maritime support.
+International vessel hygiene protection.<br>
+24/7 emergency maritime support.
 </p>
 
 <button class="btn" onclick="window.open('https://amarysiashipservice.wordpress.com/', '_blank')">
 Explore Elite Services
 </button>
+
+</div>
 
 </section>
 
@@ -247,22 +248,22 @@ Explore Elite Services
 
 <div class="card">
 <h3>🚢 Tanker & Chemical Protection</h3>
-<p>Specialized fumigation for hazardous cargo vessels.</p>
+<p>Specialized fumigation for hazardous cargo vessels ensuring full compliance and contamination prevention.</p>
 </div>
 
 <div class="card">
 <h3>📦 Container & Cargo Shipping</h3>
-<p>International quarantine compliant pest control.</p>
+<p>Professional pest control aligned with international shipping and quarantine regulations.</p>
 </div>
 
 <div class="card">
 <h3>⚓ Bulk Carrier Protection</h3>
-<p>Infestation prevention and cargo integrity protection.</p>
+<p>Advanced infestation prevention preserving cargo integrity and vessel operational standards.</p>
 </div>
 
 <div class="card">
 <h3>🌍 Corporate Maritime Operations</h3>
-<p>Global shipping sanitation coordination.</p>
+<p>Coordinated sanitation solutions supporting global trade routes and port operations.</p>
 </div>
 
 </div>
@@ -286,10 +287,8 @@ Explore Elite Services
 
 <h2>Corporate Vision & Excellence</h2>
 
-<p style="max-width:1200px;margin:auto;">
-Amarysia Ship Services is dedicated to providing elite maritime fumigation solutions,
-maintaining global safety standards, supporting international shipping companies,
-and expanding professional port service operations across global maritime trade routes.
+<p style="max-width:1100px;margin:auto;">
+Amarysia Ship Services operates with strategic precision in Ecuadorian ports, delivering certified maritime fumigation services, ensuring regulatory compliance, environmental responsibility, and operational excellence for global shipping operators.
 </p>
 
 </section>
@@ -320,21 +319,19 @@ and expanding professional port service operations across global maritime trade 
 <a href="https://wa.me/593969693131">WhatsApp</a>
 </div>
 
-<div style="margin-top:100px;">
+<div style="margin-top:80px;">
 <iframe
 src="https://www.google.com/maps?q=Esmeraldas,Ecuador&output=embed"
 width="85%"
-height="450"
-style="border-radius:50px;border:none;">
+height="400"
+style="border-radius:40px;border:none;">
 </iframe>
 </div>
 
 </section>
 
 <footer>
-<h2>Amarysia Ship Services</h2>
-<p>Global Maritime Fumigation Excellence</p>
-<p>© 2026 All Rights Reserved</p>
+<p>© 2026 Amarysia Ship Services — Global Maritime Fumigation Excellence</p>
 </footer>
 
 <a href="https://wa.me/593969693131" class="whatsapp">💬</a>
